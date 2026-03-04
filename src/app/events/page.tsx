@@ -372,10 +372,6 @@ export default function EventsPage() {
                     >
                         What We&apos;ve Built
                     </h2>
-                    <p style={{ color: "#71717a", marginTop: "0.5rem", fontSize: "0.9rem" }}>
-                        Competition events marked with 🏆 have rankings available where{" "}
-                        <code style={{ color: "#818cf8", fontSize: "0.85rem" }}>rankingAvailable = true</code>.
-                    </p>
                 </div>
 
                 <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>

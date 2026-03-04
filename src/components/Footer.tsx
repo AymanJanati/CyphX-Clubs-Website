@@ -20,7 +20,7 @@ const footerLinks = [
         links: [
             { label: "SkillTakeAway", href: "/events" },
             { label: "Next Talk", href: "/events" },
-            { label: "Leet's Code", href: "/events" },
+            { label: "AlgoRush", href: "/events" },
             { label: "CodeRush", href: "/events" },
             { label: "Cypher Camp", href: "/events" },
         ],
@@ -72,17 +72,13 @@ export default function Footer() {
                                 marginBottom: "1rem",
                             }}
                         >
-                            <span
-                                style={{
-                                    display: "inline-block",
-                                    width: "30px",
-                                    height: "30px",
-                                    background: "linear-gradient(135deg, #6366f1, #a78bfa)",
-                                    borderRadius: "7px",
-                                    flexShrink: 0,
-                                }}
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                                src="/logo.png"
+                                alt="CyphX Clubs Logo"
+                                style={{ width: "30px", height: "30px", objectFit: "contain", borderRadius: "5px", flexShrink: 0 }}
                             />
-                            Cyph<span style={{ color: "#818cf8" }}>X</span>
+                            CyphX <span style={{ color: "#818cf8" }}>Clubs</span>
                         </Link>
                         <p style={{ color: "#71717a", fontSize: "0.875rem", lineHeight: "1.6", marginBottom: "0.75rem" }}>
                             Empowering Innovation Through Competition. Student-led, EST Beni Mellal.

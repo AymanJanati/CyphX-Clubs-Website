@@ -8,54 +8,75 @@ export const siteConfig = {
     name: "CyphX Clubs",
     tagline: "Empowering Innovation Through Competition",
     school: "EST Beni Mellal",
-    email: "contact@cyphxclubs.ma",           // REPLACE
-    instagram: "https://instagram.com/cyphxclubs", // REPLACE
-    linkedin: "https://linkedin.com/company/cyphxclubs", // REPLACE
-    whatsapp: "https://chat.whatsapp.com/placeholder",  // REPLACE
-    discord: "https://discord.gg/placeholder",           // REPLACE
+    email: "clubs@cyphx.dev",
+    instagram: "https://www.instagram.com/cyphx.clubs.estbm", // REPLACE
+    linkedin: "https://www.linkedin.com/company/cyphx-clubs-estbm", // REPLACE
+    whatsapp: "https://chat.whatsapp.com/EPmSltS7gQcCiAuwrA4nPu",  // REPLACE
+    discord: "https://discord.gg/N8s3utfS",           // REPLACE
 };
 
 // ---- IMPACT STATS ----
 export const stats = [
-    { value: "20+", label: "Events Organized" },
-    { value: "150+", label: "Active Members" },
-    { value: "80+", label: "Bootcamp Participants" },
-    { value: "30+", label: "Internship Exposures" },
+    { value: "10+", label: "Events Organized" },
+    { value: "180+", label: "Active Members" },
+    { value: "60+", label: "Bootcamp Participants" },
+    { value: "10+", label: "Secured Internships" },
 ];
 
 // ---- WHAT WE DO PILLARS ----
 export const pillars = [
     {
         name: "SkillTakeAway",
-        icon: "🛠️",
+        icon: null,
+        logo: "/SkillTakeAwayico.png",
         type: "Workshop",
         description:
             "Practical, hands-on workshops that target real-world skills. From web development to cybersecurity — every session is built to build.",
     },
     {
         name: "Next Talk",
-        icon: "🎙️",
+        icon: null,
+        logo: "/NextTalkico.png",
         type: "Talk",
         description:
-            "Industry exposure sessions featuring professionals and alumni who share insights from the field — bridging campus and career.",
+            "Insight-packed sessions with experienced students and professionals. Next Talk dives deep into IT fields giving you clarity, guidance, and actionable knowledge. Learn from mistakes, ask questions, and see beyond the textbooks.",
     },
     {
-        name: "Leet's Code",
-        icon: "⌨️",
-        type: "Challenge",
+        name: "RushArena",
+        icon: null,
+        logo: "/RushArenaico.png",
+        type: "Competition",
         description:
-            "Competitive programming challenges that sharpen your algorithmic thinking and problem-solving under pressure.",
+            "The official competition series of CyphX. RushArena is the umbrella that brings together all our competitive formats under one arena — designed to sharpen skills, reveal talent, and build real high-level tech profiles. This is where preparation meets pressure.",
+    },
+    {
+        name: "AlgoRush",
+        icon: null,
+        logo: "/AlgoRushico.png",
+        type: "Competition",
+        description:
+            "Fast-paced algorithmic battles focused on logic, problem solving, and clean thinking. Solve under pressure, climb the leaderboard, and prove your analytical edge.",
     },
     {
         name: "CodeRush",
-        icon: "🚀",
+        icon: null,
+        logo: "/CodeRushico.png",
         type: "Competition",
         description:
             "Intensive hackathon-style tech competitions. Build fast, think faster. CodeRush is where real competitive profiles are forged.",
     },
     {
+        name: "FlagRush",
+        icon: null,
+        logo: "/FlagRushico.png",
+        type: "Competition",
+        description:
+            "CTF-style cybersecurity challenges built around real-world vulnerabilities and attack-defense scenarios. Hunt the flags, break the system, secure the future.",
+    },
+    {
         name: "Cypher Camp",
-        icon: "⛺",
+        icon: null,
+        logo: "/cyphercampico.png",
         type: "Camp",
         description:
             "An immersive annual bootcamp with a themed edition (e.g. Web Development, AI). Multi-day, intensive, transformative — and the highest exposure tier.",
@@ -66,10 +87,10 @@ export const pillars = [
 // Replace `photo` with the real image path under /public/team/ when available.
 export const officeMembers = [
     {
-        name: "Member Name",
+        name: "Rayan TAMRAOUI",
         role: "President",
         description: "Leads the club's vision and strategic direction.",
-        photo: null, // e.g. "/team/president.jpg"
+        photo: "/office/president.jpeg", // e.g. "/team/president.jpg"
     },
     {
         name: "Member Name",
@@ -78,16 +99,16 @@ export const officeMembers = [
         photo: null,
     },
     {
-        name: "Member Name",
-        role: "Head of Events",
-        description: "Designs and executes the event pipeline end-to-end.",
-        photo: null,
+        name: "Anas Ezzine",
+        role: "Tech Coordinator",
+        description: "Drives technical content quality across all pillars.",
+        photo: "/office/techcoordinator.jpeg",
     },
     {
-        name: "Member Name",
-        role: "Head of Tech",
-        description: "Drives technical content quality across all pillars.",
-        photo: null,
+        name: "Fatima-Zahra El Hattab",
+        role: "Event Lead",
+        description: "Leads the event planning.",
+        photo: "/office/eventlead.jpeg",
     },
     {
         name: "Member Name",
@@ -143,16 +164,6 @@ export const upcomingEvents: Event[] = [
         rankingAvailable: false,
         rankingUrl: "",
     },
-    {
-        id: "upcoming-3",
-        name: "Next Talk #4 — From Campus to Company",
-        type: "Talk",
-        description:
-            "An industry professional shares their journey from EST Beni Mellal to a leading tech company. Real talk, real advice.",
-        date: "April 20, 2026",
-        image: null,
-        instagramUrl: "https://instagram.com/cyphxclubs",
-    },
 ];
 
 // ---- PAST EVENTS ----
@@ -168,40 +179,8 @@ export const pastEvents: Event[] = [
         instagramUrl: "https://instagram.com/cyphxclubs",
     },
     {
-        id: "past-2",
-        name: "CodeRush #1",
-        type: "Competition",
-        description:
-            "The inaugural CyphX Clubs competitive programming event. 40+ participants, 5 hours, and fierce leaderboard battles.",
-        date: "November 2025",
-        image: null,
-        instagramUrl: "https://instagram.com/cyphxclubs",
-        rankingAvailable: true,
-        rankingUrl: "https://docs.google.com/spreadsheets/placeholder", // REPLACE with real ranking URL
-    },
-    {
-        id: "past-3",
-        name: "SkillTakeAway #2 — Git & GitHub",
-        type: "Workshop",
-        description:
-            "Students learned version control fundamentals, branching strategies, and collaborative workflows on GitHub.",
-        date: "October 2025",
-        image: null,
-        instagramUrl: "https://instagram.com/cyphxclubs",
-    },
-    {
-        id: "past-4",
-        name: "Next Talk #3 — Breaking into DevOps",
-        type: "Talk",
-        description:
-            "A DevOps engineer unpacked CI/CD pipelines, Docker, and the mindset shift from dev to production.",
-        date: "October 2025",
-        image: null,
-        instagramUrl: "https://instagram.com/cyphxclubs",
-    },
-    {
         id: "past-5",
-        name: "Leet's Code #1",
+        name: "AlgoRush #1",
         type: "Competition",
         description:
             "First competitive programming challenge session featuring 20+ participants solving LeetCode-style problems.",
@@ -238,7 +217,7 @@ export const evaluationCriteria = [
         weight: "High Weight",
         color: "#f59e0b",
         description:
-            "Rankings in CodeRush and Leet's Code reflect problem-solving ability and competitive readiness in technical environments.",
+            "Rankings in CodeRush and AlgoRush reflect problem-solving ability and competitive readiness in technical environments.",
     },
     {
         label: "General Engagement",

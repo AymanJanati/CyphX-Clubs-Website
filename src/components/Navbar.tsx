@@ -71,18 +71,13 @@ export default function Navbar() {
                         letterSpacing: "-0.03em",
                     }}
                 >
-                    <span
-                        style={{
-                            display: "inline-block",
-                            width: "32px",
-                            height: "32px",
-                            background: "linear-gradient(135deg, #6366f1, #a78bfa)",
-                            borderRadius: "8px",
-                        }}
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                        src="/logo.png"
+                        alt="CyphX Clubs Logo"
+                        style={{ width: "32px", height: "32px", objectFit: "contain", borderRadius: "6px" }}
                     />
-                    <span>
-                        Cyph<span style={{ color: "#818cf8" }}>X</span>
-                    </span>
+                    <span>CyphX <span style={{ color: "#818cf8" }}>Clubs</span></span>
                 </Link>
 
                 {/* Desktop Links */}

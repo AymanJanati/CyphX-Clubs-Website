@@ -32,7 +32,7 @@ const pillarColors: Record<string, string> = {
 
 const flowSteps = [
   { label: "Events", sub: "Workshops & Talks", icon: <Calendar size={20} /> },
-  { label: "Competitions", sub: "CodeRush & Leet's Code", icon: <Zap size={20} /> },
+  { label: "Competitions", sub: "CodeRush & AlgoRush", icon: <Zap size={20} /> },
   { label: "Cypher Camp", sub: "Annual Bootcamp", icon: <TrendingUp size={20} /> },
   { label: "Internship Exposure", sub: "Merit-Based Access", icon: <Users size={20} /> },
 ];
@@ -374,7 +374,7 @@ export default function HomePage() {
                 marginBottom: "1rem",
               }}
             >
-              Five Pillars of Excellence
+              The Pillars of Excellence
             </h2>
             <p style={{ color: "#a1a1aa", maxWidth: "520px", margin: "0 auto", lineHeight: 1.7 }}>
               Every pillar is designed to build a different dimension of your profile. Together, they form a complete competitive trajectory.
@@ -412,7 +412,34 @@ export default function HomePage() {
                   el.style.boxShadow = "none";
                 }}
               >
-                <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>{p.icon}</div>
+                {/* Logo or emoji icon */}
+                <div style={{ marginBottom: "1rem" }}>
+                  {p.logo ? (
+                    <div
+                      style={{
+                        width: "56px",
+                        height: "56px",
+                        borderRadius: "12px",
+                        background: "#18181b",
+                        border: "1px solid #27272a",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        overflow: "hidden",
+                        padding: "6px",
+                      }}
+                    >
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={p.logo}
+                        alt={p.name}
+                        style={{ width: "100%", height: "100%", objectFit: "contain" }}
+                      />
+                    </div>
+                  ) : (
+                    <span style={{ fontSize: "2rem" }}>{p.icon}</span>
+                  )}
+                </div>
                 <div style={{ marginBottom: "0.5rem" }}>
                   <span
                     className="badge"

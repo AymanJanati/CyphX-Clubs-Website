@@ -35,7 +35,7 @@ const partnerTypes = [
 ];
 
 const memberSteps = [
-    { icon: "🎓", label: "Be an EST Student", desc: "Open to all students currently enrolled at EST Beni Mellal." },
+    { icon: "🎓", label: "Be an USMS Student", desc: "Open to all students currently enrolled at Université Sultan Moulay Slimane, Students of EST Beni Mellal are the prioritised when there is limited capacity." },
     { icon: "📲", label: "Join the Community", desc: "Connect via WhatsApp or Discord — our two main communication channels." },
     { icon: "📅", label: "Attend Events", desc: "Show up to workshops, talks, and competitions. Presence is your first investment." },
     { icon: "🏆", label: "Compete", desc: "Enter competitions, push your limits, and climb the rankings." },
@@ -109,7 +109,7 @@ export default function JoinPage() {
                             Join as a Member
                         </h2>
                         <p style={{ color: "#a1a1aa", lineHeight: 1.7, marginBottom: "2rem" }}>
-                            Membership is open to all EST Beni Mellal students. No application needed — just show up, engage, and grow.
+                            Membership is open to all EST Beni Mellal students. No application needed — just join our discord or whatsapp group, show up, engage, and grow.
                         </p>
 
                         <div style={{ display: "flex", flexDirection: "column", gap: "1rem", marginBottom: "2.5rem" }}>
@@ -340,9 +340,6 @@ export default function JoinPage() {
                         >
                             Current & Past Partners
                         </h3>
-                        <p style={{ color: "#71717a", fontSize: "0.875rem" }}>
-                            Replace placeholder logos with real partner logos in <code style={{ color: "#818cf8" }}>/public/partners/</code> and update <code style={{ color: "#818cf8" }}>src/lib/data.ts</code>
-                        </p>
                     </div>
 
                     {/* Partner logo placeholders */}

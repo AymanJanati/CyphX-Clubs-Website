@@ -88,7 +88,12 @@ export default function AboutPage() {
                                 position: "relative",
                             }}
                         >
-                            <PlaceholderImage height="400px" label="Our Story Photo" borderRadius="20px" />
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                                src="/CyphXOnCampus.png"
+                                alt="CyphX Clubs on Campus"
+                                style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "20px" }}
+                            />
                         </div>
                         {/* Floating badge */}
                         <div
