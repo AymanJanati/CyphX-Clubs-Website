@@ -2,6 +2,7 @@
 
 import { siteConfig, partners } from "@/lib/data";
 import PlaceholderImage from "@/components/PlaceholderImage";
+import { Mic, Hammer, Briefcase, Handshake, BadgeDollarSign, GraduationCap, Smartphone, Calendar, Trophy, TrendingUp, Target, Medal, Users, Building, LineChart, Globe } from "lucide-react";
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
     return (
@@ -27,19 +28,19 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 }
 
 const partnerTypes = [
-    { icon: "🎙️", label: "Guest Speakers", desc: "Share your expertise at a Next Talk session with our student community." },
-    { icon: "🛠️", label: "Workshop Facilitators", desc: "Lead a SkillTakeAway session — practical, impactful, and directly skills-focused." },
-    { icon: "💼", label: "Internship Providers", desc: "Host CyphX-evaluated students for internship or apprenticeship opportunities." },
-    { icon: "🤝", label: "Event Collaborators", desc: "Co-organize or co-brand a CyphX event — competitions, camps, or talks." },
-    { icon: "💰", label: "Sponsors", desc: "Support CyphX's programs financially and gain visibility within the EST Beni Mellal tech community." },
+    { icon: <Mic size={28} color="#818cf8" />, label: "Guest Speakers", desc: "Share your expertise at a Next Talk session with our student community." },
+    { icon: <Hammer size={28} color="#10b981" />, label: "Workshop Facilitators", desc: "Lead a SkillTakeAway session — practical, impactful, and directly skills-focused." },
+    { icon: <Briefcase size={28} color="#f59e0b" />, label: "Internship Providers", desc: "Host CyphX-evaluated students for internship or apprenticeship opportunities." },
+    { icon: <Handshake size={28} color="#ef4444" />, label: "Event Collaborators", desc: "Co-organize or co-brand a CyphX event — competitions, camps, or talks." },
+    { icon: <BadgeDollarSign size={28} color="#eab308" />, label: "Sponsors", desc: "Support CyphX's programs financially and gain visibility within the EST Beni Mellal tech community." },
 ];
 
 const memberSteps = [
-    { icon: "🎓", label: "Be an USMS Student", desc: "Open to all students currently enrolled at Université Sultan Moulay Slimane, Students of EST Beni Mellal are the prioritised when there is limited capacity." },
-    { icon: "📲", label: "Join the Community", desc: "Connect via WhatsApp or Discord — our two main communication channels." },
-    { icon: "📅", label: "Attend Events", desc: "Show up to workshops, talks, and competitions. Presence is your first investment." },
-    { icon: "🏆", label: "Compete", desc: "Enter competitions, push your limits, and climb the rankings." },
-    { icon: "📈", label: "Grow", desc: "Build your profile, get exposure, and position yourself for internship opportunities." },
+    { icon: <GraduationCap size={24} color="#818cf8" />, label: "Be an USMS Student", desc: "Open to all students currently enrolled at Université Sultan Moulay Slimane, Students of EST Beni Mellal are the prioritised when there is limited capacity." },
+    { icon: <Smartphone size={24} color="#a1a1aa" />, label: "Join the Community", desc: "Connect via WhatsApp or Discord — our two main communication channels." },
+    { icon: <Calendar size={24} color="#3b82f6" />, label: "Attend Events", desc: "Show up to workshops, talks, and competitions. Presence is your first investment." },
+    { icon: <Trophy size={24} color="#f59e0b" />, label: "Compete", desc: "Enter competitions, push your limits, and climb the rankings." },
+    { icon: <TrendingUp size={24} color="#10b981" />, label: "Grow", desc: "Build your profile, get exposure, and position yourself for internship opportunities." },
 ];
 
 export default function JoinPage() {
@@ -129,7 +130,7 @@ export default function JoinPage() {
                                     onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.borderColor = "#27272a")}
                                     onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.borderColor = "#1e1e20")}
                                 >
-                                    <span style={{ fontSize: "1.25rem", flexShrink: 0 }}>{step.icon}</span>
+                                    <span style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "40px", height: "40px", background: "rgba(255,255,255,0.03)", borderRadius: "8px", flexShrink: 0 }}>{step.icon}</span>
                                     <div>
                                         <div
                                             style={{
@@ -232,12 +233,12 @@ export default function JoinPage() {
                             Why Join CyphX?
                         </div>
                         {[
-                            { emoji: "🎯", text: "Structured path to internship exposure" },
-                            { emoji: "🏅", text: "Real competition rankings and achievements" },
-                            { emoji: "👥", text: "Community of ambitious students" },
-                            { emoji: "🏢", text: "Access to company partnerships" },
-                            { emoji: "📈", text: "Skills that go beyond the curriculum" },
-                            { emoji: "🌍", text: "A profile that competes nationally" },
+                            { icon: <Target size={20} color="#818cf8" />, text: "Structured path to internship exposure" },
+                            { icon: <Medal size={20} color="#f59e0b" />, text: "Real competition rankings and achievements" },
+                            { icon: <Users size={20} color="#3b82f6" />, text: "Community of ambitious students" },
+                            { icon: <Building size={20} color="#a1a1aa" />, text: "Access to company partnerships" },
+                            { icon: <LineChart size={20} color="#10b981" />, text: "Skills that go beyond the curriculum" },
+                            { icon: <Globe size={20} color="#6366f1" />, text: "A profile that competes nationally" },
                         ].map((item, i) => (
                             <div
                                 key={i}
@@ -249,7 +250,7 @@ export default function JoinPage() {
                                     borderBottom: i < 5 ? "1px solid #27272a" : "none",
                                 }}
                             >
-                                <span style={{ fontSize: "1.1rem" }}>{item.emoji}</span>
+                                <span style={{ display: "flex", alignItems: "center" }}>{item.icon}</span>
                                 <span style={{ color: "#d4d4d8", fontSize: "0.9rem" }}>{item.text}</span>
                             </div>
                         ))}
@@ -312,7 +313,7 @@ export default function JoinPage() {
                                     (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
                                 }}
                             >
-                                <div style={{ fontSize: "1.75rem", marginBottom: "1rem" }}>{type.icon}</div>
+                                <div style={{ marginBottom: "1.25rem" }}>{type.icon}</div>
                                 <h3
                                     style={{
                                         fontFamily: "'Space Grotesk', sans-serif",
@@ -357,26 +358,34 @@ export default function JoinPage() {
                                     background: "#111113",
                                     border: "1px solid #27272a",
                                     borderRadius: "12px",
-                                    height: "80px",
+                                    height: "110px",
                                     display: "flex",
+                                    flexDirection: "column",
                                     alignItems: "center",
                                     justifyContent: "center",
+                                    gap: "0.5rem",
+                                    padding: "1rem",
                                     transition: "border-color 0.25s",
                                 }}
                                 onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.borderColor = "#3f3f46")}
                                 onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.borderColor = "#27272a")}
                             >
                                 {partner.logo ? (
-                                    // eslint-disable-next-line @next/next/no-img-element
-                                    <img
-                                        src={partner.logo}
-                                        alt={partner.name}
-                                        style={{ maxWidth: "120px", maxHeight: "50px", objectFit: "contain", filter: "grayscale(1) brightness(0.7)" }}
-                                    />
+                                    <>
+                                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                                        <img
+                                            src={partner.logo}
+                                            alt={partner.name}
+                                            style={{ maxWidth: "120px", maxHeight: "40px", objectFit: "contain", borderRadius: "4px" }}
+                                        />
+                                        <span style={{ fontSize: "0.75rem", color: "#a1a1aa", fontWeight: 500, textAlign: "center" }}>
+                                            {partner.name}
+                                        </span>
+                                    </>
                                 ) : (
                                     <PlaceholderImage
                                         width="100%"
-                                        height="80px"
+                                        height="100%"
                                         label={partner.name}
                                         borderRadius="12px"
                                     />

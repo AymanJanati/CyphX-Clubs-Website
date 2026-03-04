@@ -2,6 +2,7 @@
 
 import { officeMembers } from "@/lib/data";
 import PlaceholderImage from "@/components/PlaceholderImage";
+import { Trophy, Building, MapPin, Users } from "lucide-react";
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
     return (
@@ -205,22 +206,22 @@ export default function AboutPage() {
                     >
                         {[
                             {
-                                icon: "🏆",
+                                icon: <Trophy size={32} color="#f59e0b" />,
                                 title: "National Competitiveness",
                                 desc: "Producing students who compete and win at national-level tech competitions.",
                             },
                             {
-                                icon: "🏢",
+                                icon: <Building size={32} color="#818cf8" />,
                                 title: "Industry Pipelines",
                                 desc: "Building lasting partnerships with companies that see value in CyphX-trained students.",
                             },
                             {
-                                icon: "📍",
+                                icon: <MapPin size={32} color="#ef4444" />,
                                 title: "Regional Leadership",
                                 desc: "EST Beni Mellal becoming a reference point for student tech initiative in Morocco.",
                             },
                             {
-                                icon: "🔁",
+                                icon: <Users size={32} color="#10b981" />,
                                 title: "Alumni Ecosystem",
                                 desc: "A growing network of alumni who return as speakers, mentors, and partners.",
                             },
@@ -243,7 +244,7 @@ export default function AboutPage() {
                                     (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
                                 }}
                             >
-                                <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>{item.icon}</div>
+                                <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "56px", height: "56px", background: "rgba(255,255,255,0.03)", borderRadius: "12px", marginBottom: "1.25rem" }}>{item.icon}</div>
                                 <h3
                                     style={{
                                         fontFamily: "'Space Grotesk', sans-serif",

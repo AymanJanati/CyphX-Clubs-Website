@@ -138,69 +138,83 @@ export interface Event {
     // Only relevant when type === "Competition"
     rankingAvailable?: boolean;
     rankingUrl?: string;      // URL to ranking page/sheet when rankingAvailable = true
+    // Registration
+    registrationOpen?: boolean;  // true = button is active, false = greyed out
+    registrationUrl?: string;    // Link to the registration form/page
 }
 
 // ---- UPCOMING EVENTS ----
 export const upcomingEvents: Event[] = [
     {
         id: "upcoming-1",
-        name: "SkillTakeAway #3 — React Fundamentals",
-        type: "Workshop",
+        name: "RushArena Spring 2026",
+        type: "Competition",
         description:
-            "A hands-on session covering the core concepts of React — components, state, hooks, and building your first real UI.",
-        date: "March 15, 2026",
-        image: null,
-        instagramUrl: "https://instagram.com/cyphxclubs",
+            "The official competition series of CyphX, bringing under it AlgoRush, CodeRush, and FlagRush.",
+        date: "March-April, 2026",
+        image: "/media/rusharena2026teaser.jpeg",
+        instagramUrl: "https://www.instagram.com/cyphx.clubs.estbm",
+        registrationOpen: false,          // SET TO true WHEN OPEN
+        registrationUrl: "",              // REPLACE with real registration link
     },
     {
         id: "upcoming-2",
-        name: "CodeRush Spring Edition",
-        type: "Competition",
+        name: "Next Talk - CyberSec",
+        type: "Talk",
         description:
-            "A 6-hour competitive programming sprint. Solve algorithmic challenges, climb the board, and earn your ranking.",
-        date: "April 5, 2026",
-        image: null,
-        instagramUrl: "https://instagram.com/cyphxclubs",
-        rankingAvailable: false,
-        rankingUrl: "",
+            "Next Talk is where we bridge you with expert students to share their knowledge and experience academically and professionally. Learn about the field for post bac+2, its state in morocco, the skills you need to have, the best way to learn it, and more.",
+        date: "March 9, 2026",
+        image: "/media/nexttalk2026cybersecteaser.jpeg",
+        instagramUrl: "https://www.instagram.com/cyphx.clubs.estbm",
+        registrationOpen: false,          // SET TO true WHEN OPEN
+        registrationUrl: "",              // REPLACE with real registration link
     },
 ];
 
 // ---- PAST EVENTS ----
 export const pastEvents: Event[] = [
     {
-        id: "past-1",
+        id: "past-2",
         name: "Cypher Camp — Web Dev Edition",
         type: "Camp",
         description:
-            "A 3-day immersive bootcamp. Participants built full-stack web applications from scratch under mentorship.",
-        date: "December 2025",
-        image: null,
-        instagramUrl: "https://instagram.com/cyphxclubs",
+            "A 4 months immersive bootcamp. Participants built full-stack web applications from scratch under mentorship.",
+        date: "December 2025 - Present",
+        image: "/media/cyphercamp2026media.jpeg",
+        instagramUrl: "https://www.instagram.com/cyphx.clubs.estbm",
     },
     {
-        id: "past-5",
-        name: "AlgoRush #1",
+        id: "past-1",
+        name: "CyphX Arena JR",
         type: "Competition",
         description:
-            "First competitive programming challenge session featuring 20+ participants solving LeetCode-style problems.",
-        date: "September 2025",
-        image: null,
-        instagramUrl: "https://instagram.com/cyphxclubs",
-        rankingAvailable: true,
-        rankingUrl: "https://docs.google.com/spreadsheets/placeholder",
+            "The first official competition organized by CyphX Clubs in its KickOff, bringing together 50+ participants featuring low-technical and no-technical challenges to spark the competitive spirit in new talents. Focused on problem-solving and teamwork.",
+        date: "February 2026",
+        image: "/media/cyphxarenajr2025media.jpeg",
+        instagramUrl: "https://www.instagram.com/p/DR22wyQCDEz/?img_index=1",
     },
+    /*    {
+            id: "past-5",
+            name: "AlgoRush #1",
+            type: "Competition",
+            description:
+                "First competitive programming challenge session featuring 20+ participants solving LeetCode-style problems.",
+            date: "September 2025",
+            image: null,
+            instagramUrl: "https://instagram.com/cyphxclubs",
+            rankingAvailable: true,
+            rankingUrl: "https://docs.google.com/spreadsheets/placeholder",
+        },
+        */
 ];
 
 // ---- PARTNERS ----
 // Replace `logo` with real image path under /public/partners/ when available.
 export const partners = [
-    { name: "Partner Company", logo: null },
-    { name: "Tech Sponsor", logo: null },
-    { name: "Academic Partner", logo: null },
-    { name: "Industry Partner", logo: null },
-    { name: "Community Partner", logo: null },
-    { name: "Media Partner", logo: null },
+    { name: "AMOV Group SARL", logo: "/logos/amovlogo.png" },
+    { name: "CodeX Club", logo: "/logos/codexlogo.jpg" },
+    { name: "GMSOFT SARL", logo: "/logos/gmsoftlogo.png" },
+    { name: "N7 Geeks Club", logo: "/logos/n7geekslogo.jpg" },
 ];
 
 // ---- EVALUATION CRITERIA (Internship Page) ----

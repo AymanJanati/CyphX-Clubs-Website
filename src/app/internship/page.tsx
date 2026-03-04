@@ -1,6 +1,7 @@
 "use client";
 
 import { evaluationCriteria } from "@/lib/data";
+import { Scale, BarChart, Lock, Megaphone } from "lucide-react";
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
     return (
@@ -412,10 +413,10 @@ export default function InternshipPage() {
                         }}
                     >
                         {[
-                            { icon: "⚖️", label: "Equal Starting Point" },
-                            { icon: "📊", label: "Criteria-Based Evaluation" },
-                            { icon: "🔒", label: "No Bias or Favoritism" },
-                            { icon: "📣", label: "Open Communication" },
+                            { icon: <Scale size={20} color="#818cf8" />, label: "Equal Starting Point" },
+                            { icon: <BarChart size={20} color="#10b981" />, label: "Criteria-Based Evaluation" },
+                            { icon: <Lock size={20} color="#f59e0b" />, label: "No Bias or Favoritism" },
+                            { icon: <Megaphone size={20} color="#3b82f6" />, label: "Open Communication" },
                         ].map((item, i) => (
                             <div
                                 key={i}
@@ -429,7 +430,7 @@ export default function InternshipPage() {
                                     gap: "0.75rem",
                                 }}
                             >
-                                <span style={{ fontSize: "1.25rem" }}>{item.icon}</span>
+                                <span style={{ display: "flex", alignItems: "center" }}>{item.icon}</span>
                                 <span style={{ color: "#d4d4d8", fontSize: "0.875rem", fontWeight: 600 }}>{item.label}</span>
                             </div>
                         ))}

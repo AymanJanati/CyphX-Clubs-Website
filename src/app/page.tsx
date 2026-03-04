@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { ArrowRight, ChevronRight, Zap, Users, Calendar, TrendingUp } from "lucide-react";
+import { ArrowRight, ChevronRight, Zap, Users, Calendar, TrendingUp, Target, Trophy, Globe, Briefcase, Handshake } from "lucide-react";
 import { stats, pillars, siteConfig } from "@/lib/data";
 
 // ---- Animated counter hook ----
@@ -336,11 +336,11 @@ export default function HomePage() {
               }}
             />
             {[
-              { icon: "🎯", text: "Structured competitive growth path" },
-              { icon: "🏆", text: "Real rankings, real recognition" },
-              { icon: "🌍", text: "National-level technical standards" },
-              { icon: "💼", text: "Merit-based internship exposure" },
-              { icon: "🤝", text: "Industry and company connections" },
+              { icon: <Target size={24} color="#818cf8" />, text: "Structured competitive growth path" },
+              { icon: <Trophy size={24} color="#f59e0b" />, text: "Real rankings, real recognition" },
+              { icon: <Globe size={24} color="#10b981" />, text: "National-level technical standards" },
+              { icon: <Briefcase size={24} color="#ef4444" />, text: "Merit-based internship exposure" },
+              { icon: <Handshake size={24} color="#eab308" />, text: "Industry and company connections" },
             ].map((item, i) => (
               <div
                 key={i}
@@ -352,7 +352,7 @@ export default function HomePage() {
                   borderBottom: i < 4 ? "1px solid #27272a" : "none",
                 }}
               >
-                <span style={{ fontSize: "1.25rem" }}>{item.icon}</span>
+                <span style={{ display: "flex", alignItems: "center", justifyContent: "center", minWidth: "24px" }}>{item.icon}</span>
                 <span style={{ color: "#d4d4d8", fontSize: "0.9375rem", fontWeight: 500 }}>{item.text}</span>
               </div>
             ))}

@@ -2,6 +2,7 @@
 
 import { upcomingEvents, pastEvents, type Event } from "@/lib/data";
 import PlaceholderImage from "@/components/PlaceholderImage";
+import { Trophy } from "lucide-react";
 
 const typeBadgeStyle: Record<string, { bg: string; color: string; border: string }> = {
     Workshop: { bg: "rgba(16,185,129,0.1)", color: "#10b981", border: "rgba(16,185,129,0.25)" },
@@ -126,6 +127,57 @@ function UpcomingEventCard({ event }: { event: Event }) {
                 <p style={{ color: "#71717a", fontSize: "0.875rem", lineHeight: 1.7, flex: 1 }}>
                     {event.description}
                 </p>
+
+                {/* Registration Button */}
+                <div style={{ marginTop: "1.25rem" }}>
+                    {event.registrationOpen && event.registrationUrl ? (
+                        <a
+                            href={event.registrationUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                                display: "block",
+                                width: "100%",
+                                textAlign: "center",
+                                padding: "0.75rem",
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #6366f1, #818cf8)",
+                                color: "#fff",
+                                fontWeight: 600,
+                                fontSize: "0.875rem",
+                                textDecoration: "none",
+                                transition: "opacity 0.2s, transform 0.2s",
+                            }}
+                            onMouseEnter={(e) => {
+                                (e.currentTarget as HTMLElement).style.opacity = "0.9";
+                                (e.currentTarget as HTMLElement).style.transform = "translateY(-1px)";
+                            }}
+                            onMouseLeave={(e) => {
+                                (e.currentTarget as HTMLElement).style.opacity = "1";
+                                (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
+                            }}
+                        >
+                            Register Now
+                        </a>
+                    ) : (
+                        <div
+                            style={{
+                                display: "block",
+                                width: "100%",
+                                textAlign: "center",
+                                padding: "0.75rem",
+                                borderRadius: "8px",
+                                background: "#27272a",
+                                color: "#71717a",
+                                fontWeight: 600,
+                                fontSize: "0.875rem",
+                                cursor: "not-allowed",
+                            }}
+                        >
+                            Registrations Closed
+                        </div>
+                    )}
+                </div>
             </div>
         </div>
     );
@@ -234,7 +286,9 @@ function PastEventCard({ event }: { event: Event }) {
                             onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.background = "rgba(245,158,11,0.14)")}
                             onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.background = "rgba(245,158,11,0.08)")}
                         >
-                            🏆 View Ranking
+                            <span style={{ display: "flex", alignItems: "center", gap: "0.25rem" }}>
+                                <Trophy size={14} color="#fbbf24" style={{ marginTop: "-2px" }} /> View Ranking
+                            </span>
                         </a>
                     )}
                 </div>
