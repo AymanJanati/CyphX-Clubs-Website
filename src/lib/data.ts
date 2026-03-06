@@ -12,7 +12,7 @@ export const siteConfig = {
     instagram: "https://www.instagram.com/cyphx.clubs.estbm", // REPLACE
     linkedin: "https://www.linkedin.com/company/cyphx-clubs-estbm", // REPLACE
     whatsapp: "https://chat.whatsapp.com/EPmSltS7gQcCiAuwrA4nPu",  // REPLACE
-    discord: "https://discord.gg/N8s3utfS",           // REPLACE
+    discord: "will be shared soon :)",           // REPLACE
 };
 
 // ---- IMPACT STATS ----
@@ -93,16 +93,16 @@ export const officeMembers = [
         photo: "/office/president.jpeg", // e.g. "/team/president.jpg"
     },
     {
-        name: "Member Name",
-        role: "Vice President",
-        description: "Oversees operations and inter-team coordination.",
-        photo: null,
-    },
-    {
         name: "Anas Ezzine",
         role: "Tech Coordinator",
         description: "Drives technical content quality across all pillars.",
         photo: "/office/techcoordinator.jpeg",
+    },
+    {
+        name: "Nour El Houda Mastour",
+        role: "Tech Lead",
+        description: "Ensures the quality and consistency of all technical work across the club.",
+        photo: "/office/techlead.jpeg",
     },
     {
         name: "Fatima-Zahra El Hattab",
@@ -111,16 +111,22 @@ export const officeMembers = [
         photo: "/office/eventlead.jpeg",
     },
     {
-        name: "Member Name",
-        role: "Head of Marketing",
-        description: "Manages branding, social presence, and community outreach.",
-        photo: null,
+        name: "Fatima Id Ali",
+        role: "Event Lead",
+        description: "Turning ideas into unforgettable experiences as Events Lead at Cyphx Club..",
+        photo: "/office/eventlead2.jpeg",
     },
     {
-        name: "Member Name",
-        role: "Head of Partnerships",
-        description: "Builds relationships with sponsors, speakers, and companies.",
-        photo: null,
+        name: "Ikram El Haoudi",
+        role: "Lead media & communication",
+        description: "Responsible for managing the club’s media presence and communication.",
+        photo: "/office/leadmedia.jpeg",
+    },
+    {
+        name: "Sami Ayman Ben Haddou",
+        role: "Graphic designer",
+        description: "Responsible for the club’s visual identity and promotional materials.",
+        photo: "/office/graphicdesigner.jpeg",
     },
 ];
 
@@ -147,6 +153,18 @@ export interface Event {
 export const upcomingEvents: Event[] = [
     {
         id: "upcoming-1",
+        name: "SkillTakeAway #1 - CV Creation & Stage Hunting",
+        type: "Workshop",
+        description:
+            "A practical workshop focused on building professional CVs, solving missleading myths, and how to hunt for internships.",
+        date: "March 9, 2026",
+        image: "/media/skillTakeAway1.png",
+        instagramUrl: "https://www.instagram.com/cyphx.clubs.estbm",
+        registrationOpen: true,          // SET TO true WHEN OPEN
+        registrationUrl: "https://forms.gle/yzV6Da9RdTowGoF48",              // REPLACE with real registration link
+    },
+    {
+        id: "upcoming-2",
         name: "RushArena Spring 2026",
         type: "Competition",
         description:
@@ -158,12 +176,12 @@ export const upcomingEvents: Event[] = [
         registrationUrl: "",              // REPLACE with real registration link
     },
     {
-        id: "upcoming-2",
-        name: "Next Talk - CyberSec",
+        id: "upcoming-3",
+        name: "Next Talk #1 - CyberSecurity",
         type: "Talk",
         description:
             "Next Talk is where we bridge you with expert students to share their knowledge and experience academically and professionally. Learn about the field for post bac+2, its state in morocco, the skills you need to have, the best way to learn it, and more.",
-        date: "March 9, 2026",
+        date: "March 16, 2026",
         image: "/media/nexttalk2026cybersecteaser.jpeg",
         instagramUrl: "https://www.instagram.com/cyphx.clubs.estbm",
         registrationOpen: false,          // SET TO true WHEN OPEN

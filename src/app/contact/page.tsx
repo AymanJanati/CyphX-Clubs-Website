@@ -40,7 +40,7 @@ const contactChannels = [
         id: "instagram",
         icon: <IgIcon />,
         label: "Instagram",
-        value: "@cyphxclubs", // REPLACE with real handle
+        value: "@cyphx.clubs.estbm", // REPLACE with real handle
         href: siteConfig.instagram,
         description: "Follow for event announcements, highlights, and community updates.",
         color: "#e1306c",
@@ -50,7 +50,7 @@ const contactChannels = [
         id: "linkedin",
         icon: <LiIcon />,
         label: "LinkedIn",
-        value: "CyphX Clubs", // REPLACE with real display name
+        value: "CyphX Clubs - ESTBM", // REPLACE with real display name
         href: siteConfig.linkedin,
         description: "Professional updates, achievements, and member highlights.",
         color: "#0077b5",
