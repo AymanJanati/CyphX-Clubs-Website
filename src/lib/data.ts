@@ -12,7 +12,7 @@ export const siteConfig = {
     instagram: "https://www.instagram.com/cyphx.clubs.estbm", // REPLACE
     linkedin: "https://www.linkedin.com/company/cyphx-clubs-estbm", // REPLACE
     whatsapp: "https://chat.whatsapp.com/EPmSltS7gQcCiAuwrA4nPu",  // REPLACE
-    discord: "will be shared soon :)",           // REPLACE
+    discord: "https://discord.gg/N8s3utfS",           // REPLACE
 };
 
 // ---- IMPACT STATS ----
@@ -151,6 +151,18 @@ export interface Event {
 
 // ---- UPCOMING EVENTS ----
 export const upcomingEvents: Event[] = [
+    {
+        id: "upcoming-0",
+        name: "AlgoRush #1 - Spring 2026",
+        type: "Competition",
+        description:
+            "The first competition of the season, focused on algorithmic problem solving.",
+        date: "March 13, 2026",
+        image: "/media/AlgoRushBanner.png",
+        instagramUrl: "https://www.instagram.com/cyphx.clubs.estbm",
+        registrationOpen: true,          // SET TO true WHEN OPEN
+        registrationUrl: "https://forms.gle/oAi9YXexuBw7w3Z46",              // REPLACE with real registration link
+    },
     {
         id: "upcoming-1",
         name: "SkillTakeAway #1 - CV Creation & Stage Hunting",
