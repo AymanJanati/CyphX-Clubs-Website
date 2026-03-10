@@ -128,6 +128,12 @@ export const officeMembers = [
         description: "Responsible for the club’s visual identity and promotional materials.",
         photo: "/office/graphicdesigner.jpeg",
     },
+    {
+        name: "M'RINO Imane",
+        role: "Social Media Manager",
+        description: "Managing social media strategy, content, and community engagement.",
+        photo: "/office/socialmediamanager.jpeg",
+    },
 ];
 
 // ---- EVENT TYPE ----
@@ -164,18 +170,6 @@ export const upcomingEvents: Event[] = [
         registrationUrl: "https://forms.gle/oAi9YXexuBw7w3Z46",              // REPLACE with real registration link
     },
     {
-        id: "upcoming-1",
-        name: "SkillTakeAway #1 - CV Creation & Stage Hunting",
-        type: "Workshop",
-        description:
-            "A practical workshop focused on building professional CVs, solving missleading myths, and how to hunt for internships.",
-        date: "March 9, 2026",
-        image: "/media/skillTakeAway1.png",
-        instagramUrl: "https://www.instagram.com/cyphx.clubs.estbm",
-        registrationOpen: true,          // SET TO true WHEN OPEN
-        registrationUrl: "https://forms.gle/yzV6Da9RdTowGoF48",              // REPLACE with real registration link
-    },
-    {
         id: "upcoming-2",
         name: "RushArena Spring 2026",
         type: "Competition",
@@ -203,6 +197,16 @@ export const upcomingEvents: Event[] = [
 
 // ---- PAST EVENTS ----
 export const pastEvents: Event[] = [
+    {
+        id: "past-3",
+        name: "SkillTakeAway #1 - CV Creation & Stage Hunting",
+        type: "Workshop",
+        description:
+            "A practical workshop focused on building professional CVs, solving missleading myths, and how to hunt for internships.",
+        date: "March 9, 2026",
+        image: "/media/skillTakeAway1.png",
+        instagramUrl: "https://www.instagram.com/cyphx.clubs.estbm",
+    },
     {
         id: "past-2",
         name: "Cypher Camp — Web Dev Edition",
